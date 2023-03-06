@@ -1,0 +1,19 @@
+package Array_2;
+//https://codingbat.com/prob/p104627
+public class More14 {
+    public boolean more14(int[]nums){
+        int count1=0;
+        int count4=0;
+        for (int i=0;i<nums.length;i++){
+            if (nums[i]==1)
+                count1++;
+
+            if (nums[i]==4)
+                count4++;
+        }
+        if (count1>count4)
+            return true;
+        else
+            return false;
+    }
+}
